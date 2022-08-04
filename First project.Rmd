@@ -1,0 +1,20 @@
+---
+title: "Projoct1"
+author: "John"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F,message = F,warning = F)
+```
+
+```{r}
+library(readr)
+library(knitr)
+library(tidyverse)
+Iris <- read_csv("Iris.csv")
+Iris %>%head(6) %>% kable()
+#View(Iris)
+```
+
