@@ -1,5 +1,5 @@
 ---
-title: "Projoct1"
+title: "Project1"
 author: "John"
 date: "`r Sys.Date()`"
 output: pdf_document
@@ -16,5 +16,13 @@ library(tidyverse)
 Iris <- read_csv("Iris.csv")
 Iris %>%head(6) %>% kable()
 #View(Iris)
+```
+
+# simple visualization
+
+```{r}
+Iris %>% 
+  ggplot(aes(x = SepalLengthCm,y =SepalWidthCm,color = Species))+
+  geom_point()
 ```
 

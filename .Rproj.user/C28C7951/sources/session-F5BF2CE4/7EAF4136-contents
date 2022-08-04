@@ -18,3 +18,11 @@ Iris %>%head(6) %>% kable()
 #View(Iris)
 ```
 
+# simple visualization
+
+```{r}
+Iris %>% 
+  ggplot(aes(x = SepalLengthCm,y =SepalWidthCm,color = Species))+
+  geom_point()
+```
+
